@@ -16,3 +16,10 @@ ENV PATH /root/anaconda3/bin:$PATH
 RUN conda update conda
 RUN conda update anaconda
 RUN conda update --all
+
+# Setting up Jupyter
+RUN mkdir /notebooks
+RUN jupyter notebook --generate-config --allow-root
+RUN echo "c.NotebookApp.token = "knowledge_base"" >> /root/.jupyter/jupyter_notebook_config.py
+EXPOSE 8888
+CMD ["jupyter", "notebook", "--allow-root", "--notebook-dir=/notebooks", "--ip='*'", "--port=8888", "--no-browser"]
