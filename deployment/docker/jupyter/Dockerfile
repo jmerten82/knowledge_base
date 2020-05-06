@@ -20,6 +20,6 @@ RUN conda update --all
 # Setting up Jupyter
 RUN mkdir /notebooks
 RUN jupyter notebook --generate-config --allow-root
-RUN echo "c.NotebookApp.token = "knowledge_base"" >> /root/.jupyter/jupyter_notebook_config.py
+RUN echo "c.NotebookApp.password = 'sha1:92fffcbbed3c:9d923fb18663a28d5372ba96006dba0c0009e18d'" >> /root/.jupyter/jupyter_notebook_config.py
 EXPOSE 8888
 CMD ["jupyter", "notebook", "--allow-root", "--notebook-dir=/notebooks", "--ip='*'", "--port=8888", "--no-browser"]
