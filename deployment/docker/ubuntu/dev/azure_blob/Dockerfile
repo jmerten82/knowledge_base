@@ -1,13 +1,8 @@
 # Build on standard ubuntu dev container
-FROM dev_base:bare
+FROM dev:base
 
 # Creating one code and one data folder
 RUN mkdir /code
-RUN mkdir /code/include
-RUN mkdir /files
-
-# Checking out knowledge base
-RUN git clone https://github.com/jmerten82/knowledge_base.git ./code/knowledge_base
 
 # Installing MS casablanca
 ENV DEBIAN_FRONTEND=noninteractive
@@ -29,5 +24,3 @@ RUN make
 
 # Installing Azure Python storage
 RUN pip3 install azure-storage-blob
-
-WORKDIR /code/knowledge_base/deployment/multi_language

@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/home/jmerten/anaconda3/envs/py37/bin/python"
+    "python.pythonPath": "/home/jmerten/anaconda3/envs/py37/bin/python",
+    "editor.rulers": [ 80 ]
 }
