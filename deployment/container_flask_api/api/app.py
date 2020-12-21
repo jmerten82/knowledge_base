@@ -9,7 +9,11 @@ def index():
 
 @app.route('/pull', methods=['POST'])
 def grab_modify_save():
-    pass
+    if not request.json or not 'container' in request.json or not 'blob' in request.json:
+        abort(400)
+    container = request.json['container']
+    blob = request.json['blob']
+    return container, blob
 
 @app.route('/push')
 def push_to_adls():
