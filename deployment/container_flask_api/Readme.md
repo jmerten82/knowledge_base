@@ -8,11 +8,10 @@ The container this project is running in is a three stage build:
 3. **Azure blob:** Installs the C++ and Python Azure Storage SDK.
 4. **Project dev:** Gets specific Azure crededentials at build via envs and clones knowledge base from github.
 
-## API call via Flask
+## C++ Part
+[Azure Storage SDK lite (C++)](https://github.com/Azure/azure-storage-cpplite)
+
+## Python part
 [VS Code Flask intro](https://code.visualstudio.com/docs/python/tutorial-flask)
 
 [FLASK APIS](https://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask)
-
-## C++ Part
-
-## Python part
