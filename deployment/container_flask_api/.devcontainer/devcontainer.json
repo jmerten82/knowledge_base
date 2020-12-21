@@ -1,0 +1,4 @@
+{
+    "image": "deploy:flask_api",
+    "forwardPorts": [5000]
+}

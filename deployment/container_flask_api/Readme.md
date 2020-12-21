@@ -19,4 +19,11 @@ The container this project is running in is a three stage build:
 
 [VS Code Flask intro](https://code.visualstudio.com/docs/python/tutorial-flask)
 
+[Flask quickstart](https://flask.palletsprojects.com/en/1.1.x/quickstart/)
+
 [FLASK APIS](https://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask)
+
+[Python subprocess](https://docs.python.org/3/library/subprocess.html)
+
+## General
+[HTTP Status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
