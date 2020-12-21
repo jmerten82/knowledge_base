@@ -5,5 +5,5 @@ FROM ubuntu:20.04
 LABEL purpose="Blank Ubuntu install"
 
 # Updating OS packages
-RUN apt-get update && apt-get upgrade
+RUN apt-get update -y && apt-get upgrade -y
 

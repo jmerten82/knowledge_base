@@ -1,7 +1,8 @@
 # Parent image, plain Ubuntu installation
-FROM ubuntu:base
+FROM base:ubuntu
 
 # Getting basic C++ env
+RUN apt-get update -y
 RUN apt-get install -y build-essential
 
 # Getting Python, pip and FLASK
