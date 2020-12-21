@@ -1,4 +1,4 @@
-# Parent image, Ubuntu 18.04, still a save bet. 
+# Parent image, plain Ubuntu installation
 FROM ubuntu:base
 
 # Getting basic C++ env
@@ -13,6 +13,4 @@ RUN pip3 install flask
 #Install git
 RUN apt-get install -y git
 
-# Exposing flask port
-EXPOSE 5000
 

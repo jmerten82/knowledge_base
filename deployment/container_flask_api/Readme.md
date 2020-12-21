@@ -9,9 +9,14 @@ The container this project is running in is a three stage build:
 4. **Project dev:** Gets specific Azure crededentials at build via envs and clones knowledge base from github.
 
 ## C++ Part
+[Azure Storage Client Lib](https://github.com/Azure/azure-storage-cpp)
+
 [Azure Storage SDK lite (C++)](https://github.com/Azure/azure-storage-cpplite)
 
 ## Python part
+
+[Azure Storage Python](https://github.com/Azure/azure-storage-python)
+
 [VS Code Flask intro](https://code.visualstudio.com/docs/python/tutorial-flask)
 
 [FLASK APIS](https://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask)
