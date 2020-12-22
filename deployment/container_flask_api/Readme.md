@@ -27,3 +27,13 @@ The container this project is running in is a three stage build:
 
 ## General
 [HTTP Status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
+
+## Curl
+Here some sample curl commands:
+
+```
+curl -i http://localhost:5000/
+```
+``` 
+curl -i -H "Content-Type: application/json" -X POST -d @sample_config.json http://localhost:5000/pull/23 
+```
