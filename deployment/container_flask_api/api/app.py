@@ -1,3 +1,6 @@
+import os
+import subprocess
+
 from flask import Flask
 from flask import request
 from flask import jsonify
@@ -9,7 +12,7 @@ app = Flask(__name__)
 def index():
     return "Hello World."
 
-@app.route('/pull/<uuid>', methods=['POST'])
+@app.route('/<uuid>', methods=['POST'])
 def grab_modify_save(uuid):
     if request.is_json:
         info = request.get_json()
@@ -17,7 +20,11 @@ def grab_modify_save(uuid):
         abort(400)
     if "container" not in info or "blob" not in info:
         abort(400)
-    
+    file = open("/code/uuid", "w")
+    file.write(str(uuid))
+
+    subprocess.Popen(["/code/read_file_add_save", "-l", "/code/file.txt", "-c", info["container"], "-b", info["blob"]])
+
     return jsonify({"uuid":uuid, "info":info})
 
 @app.route('/push')

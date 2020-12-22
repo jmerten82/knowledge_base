@@ -1,4 +1,7 @@
 #include <iostream>
+#include <fstream>
+#include <sstream>
+#include <stdexcept>
 
 #include <tclap/CmdLine.h>
 #include <util.h>
@@ -32,17 +35,41 @@ int main(int argc, char* argv[])
     //Checking on container
     bool exists = 0;
     exists = bc.container_exists(containerArg.getValue());
-    cout <<"Your container " <<flush;
-    if(exists==1)
+    if(exists==0)
     {
-        cout <<"exists" <<flush;
+        throw invalid_argument("Container does not exist.");
     }
-    else
-    {
-        cout << "does not exist" <<flush;
-    }
-    cout <<"." <<endl <<endl;
 
-    
+
+    //Checking on blob  
+    exists = bc.blob_exists(containerArg.getValue(), blobArg.getValue());
+    if(exists==0)
+    {
+        throw invalid_argument("Blob does not exist.");
+    }
+
+    //Downloading blob as stream
+    stringstream out_stream;
+    bc.download_blob_to_stream(containerArg.getValue(), blobArg.getValue(), 0, 0, out_stream);
+
+    //Extracting numbers and saving them to file
+
+    string line;
+    ofstream out(localArg.getValue());
+    int counter = 0;
+    while(getline(out_stream, line, '\n'))
+    {
+        if(counter == 2)
+        {
+            out <<line <<endl;
+        }
+        if(counter == 3)
+        {
+            out <<line;
+        }
+        counter++;
+    }
+    out.close();
+
     return 0;
 }
