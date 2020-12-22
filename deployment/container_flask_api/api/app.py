@@ -23,9 +23,15 @@ def grab_modify_save(uuid):
     file = open("/code/uuid", "w")
     file.write(str(uuid))
 
-    subprocess.Popen(["/code/read_file_add_save", "-l", "/code/file.txt", "-c", info["container"], "-b", info["blob"]])
+    p = subprocess.Popen(["/code/read_file_add_save", "-l", "/code/file.txt", "-c", info["container"], "-b", info["blob"]])
+    rt = p.wait()
+    if(not rt):
+        answer = "Success"
+    else:
+        os.remove("/code/uuid")
+        answer = "Failed"
 
-    return jsonify({"uuid":uuid, "info":info})
+    return jsonify({"uuid":uuid,"result":answer, "info":info})
 
 @app.route('/push')
 def push_to_adls():
