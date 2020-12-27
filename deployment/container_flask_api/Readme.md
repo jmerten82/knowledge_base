@@ -28,6 +28,12 @@ The container this project is running in is a three stage build:
 ## General
 [HTTP Status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
 
+## Compiling
+```
+g++ -o /code/read_file_add_save ./read_file_add_save.cpp ../src/util.cpp /code/azure-storage-cpplite/build.release/libazure-storage-lite.a -I ../include/ -lcrypto -lcurl -lpthread -luuid
+```
+
+
 ## Curl
 Here some sample curl commands:
 
@@ -35,5 +41,5 @@ Here some sample curl commands:
 curl -i http://localhost:5000/
 ```
 ``` 
-curl -i -H "Content-Type: application/json" -X POST -d @sample_config.json http://localhost:5000/pull/23 
+curl -i -H "Content-Type: application/json" -X POST -d @sample_config.json http://localhost:5000/23 
 ```
