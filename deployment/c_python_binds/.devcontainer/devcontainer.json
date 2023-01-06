@@ -1,1 +1,4 @@
-{}
+{
+    "image": "deploy:cpybind",
+    "forwardPorts": [5000]
+}
