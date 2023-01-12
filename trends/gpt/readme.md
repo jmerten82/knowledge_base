@@ -20,6 +20,8 @@ Also, since GPT is a Transformer-based model, this thorough Transformer introduc
 
 [Phuong et al. (2022): Formal Algorithms for Transformers](https://arxiv.org/abs/2207.09238)
 
+The tone of this paper is actually slightly irritating since it mentions at least one time to often that Pseudocode is very important. However, it gives a nice concise overview on what transformers are, how they are trained and what they predict. It also covers the big language models such as BERT and GPT. 
+
 ## The Karpathy Repo
 This is a minimal and instructive implementation of the GPT language model. What GPT exactly does is best explained by ChatGPT itself:
 
