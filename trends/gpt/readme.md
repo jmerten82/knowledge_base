@@ -22,6 +22,12 @@ Also, since GPT is a Transformer-based model, this thorough Transformer introduc
 
 The tone of this paper is actually slightly irritating since it mentions at least one time to often that Pseudocode is very important. However, it gives a nice concise overview on what transformers are, how they are trained and what they predict. It also covers the big language models such as BERT and GPT. 
 
+If you want to go even deeper, there is of course the ultimate reference to the multi-headed attention architecture which is underlying most large language models (LLM):
+
+[Attention Is All You Need](https://arxiv.org/abs/1706.03762).
+
+
+
 ## The Karpathy Repo
 This is a minimal and instructive implementation of the GPT language model. What GPT exactly does is best explained by ChatGPT itself:
 
