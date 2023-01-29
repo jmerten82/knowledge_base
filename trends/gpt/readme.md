@@ -26,6 +26,14 @@ If you want to go even deeper, there is of course the ultimate reference to the 
 
 [Attention Is All You Need](https://arxiv.org/abs/1706.03762).
 
+Finally, it is worth mentioning here that the large language models (LLM) are trained by predicting sequences. Hence, similar archtiectures can be used for any sequence forecasting task, as neatly shown here by MSFT
+
+[SASRec & SSEPT | Sequential Recommendation Using Transformer](https://github.com/microsoft/recommenders/blob/main/examples/00_quick_start/sasrec_amazon.ipynb)
+
+which is part of MSFT's excellent Recommender RePo
+
+[Recommenders](https://github.com/microsoft/recommenders)
+
 
 
 ## The Karpathy Repo
