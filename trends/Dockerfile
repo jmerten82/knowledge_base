@@ -1,8 +1,8 @@
-# Parent image, Ubuntu 18.04, still a save bet. 
+# Parent image, Ubuntu 18.04, still safest bet
 FROM ubuntu:18.04
 
 # What is it doing.
-LABEL purpose="PyTorch devcontainer"
+LABEL purpose="Blank Ubuntu install"
 
 # Updating OS packages
 RUN apt-get update -y && apt-get upgrade -y
@@ -16,6 +16,6 @@ RUN pip3 install flask
 #Install git
 RUN apt-get install -y git
 
-
-
-
+# Installing Python requirements
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
