@@ -10,7 +10,8 @@ RUN apt-get update -y && apt-get upgrade -y
 # Getting Python, pip and FLASK
 RUN apt-get install -y python3
 RUN apt-get upgrade -y python3
-RUN apt install -y python3-pip
+RUN apt install -y  python3-pip
+RUN pip3 install --upgrade pip
 RUN pip3 install flask
 
 #Install git
