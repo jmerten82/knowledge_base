@@ -5,6 +5,10 @@
 - Muse
 - Stable Diffusion
 
+[High-Resolution Image Synthesis with Latent Diffusion Models
+](https://arxiv.org/abs/2112.10752)
+
+
 # Text to text
 - GPT
 - BERT
