@@ -1,9 +1,11 @@
 ipython
+jupyter
+notebook
 numpy
 scipy
 scikit-learn
 pandas
-jupyter
-notebook
 torch
 torchvision
+matplotlib
+seaborn
