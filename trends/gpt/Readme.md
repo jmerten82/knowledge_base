@@ -47,3 +47,11 @@ This is a minimal and instructive implementation of the GPT language model. What
 
 `The main advantage of GPT is that it can generate realistic and coherent text without being explicitly programmed to do so. This makes it a powerful tool for tasks that require the generation of human-like text, such as chatbots, language translation, and content creation.`
 
+In the meanwhile, Karpathy has written a new Repo which is this one
+
+[nanoGPT](https://github.com/karpathy/nanoGPT)
+
+Unfortunately, it does not contain a propoer data loader, as of yet, but it is even more intuitive. 
+
+
+
