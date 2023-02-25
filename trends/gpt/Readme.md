@@ -51,7 +51,9 @@ In the meanwhile, Karpathy has written a new Repo which is this one
 
 [nanoGPT](https://github.com/karpathy/nanoGPT)
 
-Unfortunately, it does not contain a propoer data loader, as of yet, but it is even more intuitive. 
+Unfortunately, it does not contain a propoer data loader, as of yet, but it is even more intuitive.
+
+# And here comes an answer from FAIR
 
 
 
