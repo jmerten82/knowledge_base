@@ -55,5 +55,11 @@ Unfortunately, it does not contain a propoer data loader, as of yet, but it is e
 
 # And here comes an answer from FAIR
 
+[LLaMa](https://github.com/facebookresearch/llama)
+
+which is the LLM from Facebook. Most recently, Stanford released Alpaca and fine-tuned it to reach the performace of GPT-3.5:
+
+[Alpaca](https://github.com/tatsu-lab/stanford_alpaca)
+
 
 

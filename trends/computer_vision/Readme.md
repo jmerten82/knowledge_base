@@ -8,3 +8,7 @@ An Google Research Blog Article on the dawn of image transformers is provided [h
 
 
 Pix2Seq
+
+SAM (segment anything model)
+
+[Github](https://github.com/facebookresearch/segment-anything)
