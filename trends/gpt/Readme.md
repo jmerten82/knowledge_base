@@ -61,5 +61,9 @@ which is the LLM from Facebook. Most recently, Stanford released Alpaca and fine
 
 [Alpaca](https://github.com/tatsu-lab/stanford_alpaca)
 
+Most exciting paper dealing with GPT-4 disruption
+
+[Bubeck et al. 2023: Sparks of Artificial General Intelligence: Early experiments with GPT-4](https://arxiv.org/abs/2303.12712)
+
 
 
