@@ -7,10 +7,12 @@ Excelent start, a landscape
 - Dall-E
 - Imagen
 - Muse
-- Stable Diffusion
+- [Stable Diffusion](https://github.com/CompVis/stable-diffusion)
 
 [High-Resolution Image Synthesis with Latent Diffusion Models
 ](https://arxiv.org/abs/2112.10752)
+
+[Here](https://bootcamp.uxdesign.cc/how-stable-diffusion-works-explained-for-non-technical-people-be6aa674fa1d) is also a quick summary of this rather complex topcis. 
 
 
 # Text to text
@@ -33,3 +35,12 @@ CycleGAN
 Yap, Google came up with it now
 
 [MusicLM: Generating Music From Text](https://google-research.github.io/seanet/musiclm/examples/)
+
+# NeRF - Neural Radiance Fields
+
+[Original work](https://www.matthewtancik.com/nerf)
+
+# Generative Agents
+
+[Park et al. 2023](https://arxiv.org/abs/2304.03442)
+
