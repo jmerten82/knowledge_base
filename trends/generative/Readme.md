@@ -44,3 +44,7 @@ Yap, Google came up with it now
 
 [Park et al. 2023](https://arxiv.org/abs/2304.03442)
 
+and a real-life implemantaion of this can be found already here
+
+[Auto-GPT](https://github.com/Significant-Gravitas/Auto-GPT)
+
